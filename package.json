@@ -1,8 +1,8 @@
 {
-  "name": "@oddstronaut/gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.1",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "rustynerds-website",
+  "description": "RustyNerds community website",
+  "version": "1.0.0",
+  "author": "Glen Hughes <glen.866@gmail.com>",
   "dependencies": {
     "gatsby": "2.7.1",
     "gatsby-plugin-manifest": "2.1.1",
@@ -19,7 +19,8 @@
     "gatsby",
     "tailwind",
     "tailwindcss",
-    "purgecss"
+    "purgecss",
+    "rustynerds"
   ],
   "license": "MIT",
   "scripts": {
@@ -48,12 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind"
+    "url": "https://github.com/GlenHughes/rustynerds-website"
   },
   "bugs": {
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/GlenHughes/rustynerds-website/issues"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "private"
   }
 }

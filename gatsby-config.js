@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    title: `RustyNerds Community Website`,
+    description: `RustyNerds is a gaming community with bespoke custom Rust gaming servers plus other games!`,
+    author: `@bugsy1440p`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `rustynerds-website`,
+        short_name: `rustynerds-website`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/icons/favicon-32x32.png`
       }
     },
     `gatsby-plugin-postcss`,

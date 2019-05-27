@@ -1,38 +1,50 @@
 import React from "react";
+import ImageGallery from "react-image-gallery";
+import "../../node_modules/react-image-gallery/styles/css/image-gallery.css"
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import slide1 from "../images/slider/01.png"
+import slide2 from "../images/slider/02.png"
+import slide3 from "../images/slider/03.png"
+import slide4 from "../images/slider/04.png"
+import slide5 from "../images/slider/05.png"
+
+const images = [
+ {
+   original: slide1,
+   thumbnail: slide1,
+ },
+ {
+   original: slide2,
+   thumbnail: slide2,
+ },
+ {
+   original: slide3,
+   thumbnail: slide3,
+ },
+ {
+   original: slide4,
+   thumbnail: slide4,
+ },
+ {
+   original: slide5,
+   thumbnail: slide5,
+ },
+]
+
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
         title="Home"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`rustynerds`, `bugsy1440p`, `rust`, `gaming`]}
       />
 
       <div className="text-center">
-        <img
-          src={catAndHumanIllustration}
-          className="block mx-auto w-1/2"
-          alt="Cat and human sitting on a couch"
-        />
-
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{" "}
-          <a
-            href="https://tailwindcss.com/"
-            className="font-bold no-underline text-gray-900"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
-        </p>
+        <ImageGallery items={images} />
+        sliding carousel of screen shots to be shown here
       </div>
     </Layout>
   );

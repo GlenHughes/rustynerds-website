@@ -24,24 +24,16 @@ function Layout({ children }) {
             {children}
           </div>
 
-          <footer className="bg-blue-500">
-            <div className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
+          <footer className="bg-red-600">
+            <div className="flex justify-center text-center max-w-4xl mx-auto p-4 md:p-8 text-sm">
               <p className="text-white">
+                Copyright RustyNerds {new Date().getUTCFullYear()}<br />
                 Created by{" "}
                 <a
-                  href="https://taylorbryant.blog"
+                  href="https://www.youtube.com/bugsygaminghd"
                   className="font-bold no-underline text-white"
                 >
-                  Taylor Bryant
-                </a>
-              </p>
-
-              <p>
-                <a
-                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-                  className="font-bold no-underline text-white"
-                >
-                  GitHub
+                  Bugsy1440p
                 </a>
               </p>
             </div>

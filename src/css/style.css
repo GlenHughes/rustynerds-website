@@ -60,3 +60,33 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+ .logo {
+   position: absolute;
+   max-width: 150px;
+   left: 50%;
+   margin-left: -75px;
+   background-color: #e53e3d;
+   padding: 15px;
+   top: 0;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+ }
+
+ .image-gallery {
+    position: absolute;
+    left: 0;
+    top: 94px;
+    max-height: 720px;
+    overflow: hidden;
+    z-index: 1;
+ }
+
+ nav.bg-red-600 {
+    position: relative;
+    z-index: 2;
+ }
+
+ .image-gallery-left-nav, .image-gallery-right-nav {
+    top: 35% !important;
+ }
