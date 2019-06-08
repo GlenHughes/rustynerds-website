@@ -90,3 +90,22 @@
  .image-gallery-left-nav, .image-gallery-right-nav {
     top: 35% !important;
  }
+
+ @media (max-width: 767px) {
+    .logo {
+      max-width: 100px;
+      margin-left: -50px;
+      padding: 6px;
+    }
+    .image-gallery {
+       top: 62px;
+    }
+ }
+
+ @media (max-width: 620px) {
+    .logo {
+      max-width: 75px;
+      margin-left: -37px;
+      padding: 3px;
+    }
+ }

@@ -44,7 +44,6 @@ function IndexPage() {
 
       <div className="text-center">
         <ImageGallery items={images} />
-        sliding carousel of screen shots to be shown here
       </div>
     </Layout>
   );
