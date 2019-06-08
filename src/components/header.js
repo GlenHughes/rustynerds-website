@@ -43,19 +43,23 @@ function Header({ siteTitle }) {
             >
               Home
             </Link>
-
             <Link
-              to="/about"
+              to="/servers"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
-              About
+              Servers
             </Link>
-
             <Link
-              to="/contact"
+              to="/discord"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Discord
+            </Link>
+            <Link
+              to="/shop"
               className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
-              Contact
+              Shop
             </Link>
           </div>
         </div>

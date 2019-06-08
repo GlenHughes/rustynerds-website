@@ -1,10 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `RustyNerds Community Website`,
+    title: `RustyNerds`,
     description: `RustyNerds is a gaming community with bespoke custom Rust gaming servers plus other games!`,
     author: `@bugsy1440p`
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -24,6 +34,13 @@ module.exports = {
       options: {
         tailwind: true,
         purgeOnly: ["src/css/style.css"]
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/images`
       }
     }
   ]
