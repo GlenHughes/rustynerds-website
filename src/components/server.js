@@ -1,26 +1,27 @@
-import React, { useState } from "react";
-import ReactToolTip from "react-tooltip"
+import React from "react";
 
 import Image from "../components/image"
 
 function Server ({ server }) {
-  const { id, name, banner, ip, port, plugins } = server
+  const { name, banner, ip, port, plugins } = server
   const serverPlugins = getPlugins(plugins)
   // console.log(name, ip, port, plugins)
   return (
-    <div className="lg:w-2/3 sm:w-full rounded overflow-hidden shadow-lg m-auto mt-3">
+    <div className="rounded overflow-hidden shadow-lg m-auto mt-3 px-2">
       <Image className="w-full" filename={banner} alt={name} />
-      <div className="px-6 py-4">
-        <div className="flex">
-          <div className="font-bold text-xl">{name}</div>
-          <span className="rounded-full inline-block bg-green-500 uppercase px-2 py-2 ml-2 text-xs text-white font-bold leading-tight">20/100</span>
+      <div className="p-2">
+        <div className="flex flex-wrap">
+          <div class="w-full sm:w-1/2 lg:w-full">
+            <span className="font-bold text-xl">{name}</span>
+            <span className="rounded bg-green-500 p-1 text-xs text-white font-bold leading-tight ml-2 float-right">20/100</span>
+          </div>
+          <div className="w-full sm:w-1/2 lg:w-full">
+            <a href={`steam://connect/${ip}:${port}`} className="font-bold">{ip}:{port}</a> <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-1 rounded">Connect</button>
+          </div>
         </div>
-        <p className="text-xl text-base">
-          Click to connect: <a href={`steam://connect/${ip}:${port}`} className="text-blue-700" data-tip={`Click to connect directly to ${name} through Steam!`}>{ip}:{port}</a>
-        </p>
       </div>
-      <p className="text-sm px-6">Plugins</p>
-      <div className="px-6 pt-1 pb-0">
+      <p className="text-sm px-3">Plugins</p>
+      <div className="p-2">
         {serverPlugins}
       </div>
     </div>

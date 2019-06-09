@@ -32,11 +32,9 @@ function ServersPage () {
         render={data => {
           // console.log(data)
           return (
-            <div className="flex flex-col md:flex-row items-center mt-10 m-auto">
-              <ul className="w-auto">
+              <ul className="flex flex-col lg:flex-row items-center mt-10 -mx-2">
                 {getOptions(data)}
               </ul>
-            </div>
           )
         }}
       />    
@@ -47,11 +45,9 @@ function ServersPage () {
 function getOptions (data) {
   const items = []
   data.allServersJson.edges.forEach(server => {
-    console.log(server.node)
+    const { id } = server.node
     items.push(
-      <li key={server.node.id}>
-        <Server server={server.node} />
-      </li>
+      <li key={id} className="lg:w-1/2 sm:w-full"><Server server={server.node} /></li>
     )
   })
   return items
