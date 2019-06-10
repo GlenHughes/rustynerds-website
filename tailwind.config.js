@@ -2,6 +2,9 @@
 
 module.exports = {
   theme: {
+    // colors: {
+    //   gold: "#FED834"
+    // }
   },
   variants: {},
   plugins: []
