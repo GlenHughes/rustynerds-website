@@ -52,32 +52,5 @@
       "Server Vote",
       "Free Skins"
     ]
-  },
-  {
-    "id": "3",
-    "name": "RustyNerds x50",
-    "ip": "194.147.122.160",
-    "port": "28015",
-    "banner": "rusty-nerds-main-x50.png",
-    "plugins": [
-      "x5 Multiplier",
-      "RustNet",
-      "Clans",
-      "Friends",
-      "Server Rewards",
-      "Teleport",
-      "Better Loot",
-      "Bgrade",
-      "Shared Doors ",
-      "Furnace Splitter",
-      "Stack Sizes",
-      "Instant Craft",
-      "Death Notes",
-      "Lusty Map",
-      "Town",
-      "VoteDay",
-      "Server Vote",
-      "Free Skins"
-    ]
   }
 ]
