@@ -20,6 +20,7 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
     "react-image-gallery": "^0.8.17",
+    "react-modal": "^3.8.1",
     "react-tooltip": "^3.10.0",
     "react-web-tabs": "^1.0.1"
   },

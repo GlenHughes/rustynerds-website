@@ -17,7 +17,7 @@ function Layout({ children }) {
         }
       `}
       render={data => (
-        <div className="flex flex-col font-sans min-h-screen text-gray-900">
+        <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-200">
           <Header siteTitle={data.site.siteMetadata.title} />
 
           <div className="flex flex-col flex-1 md:justify-center mx-auto px-4 py-8 md:p-8 sm:py-0 w-full">
