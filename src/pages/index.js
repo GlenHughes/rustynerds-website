@@ -41,7 +41,6 @@ function IndexPage() {
         title="Home"
         keywords={[`rustynerds`, `bugsy1440p`, `rust`, `gaming`]}
       />
-
       <div className="text-center">
         <ImageGallery items={images} />
       </div>

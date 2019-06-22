@@ -38,12 +38,6 @@ function Header({ siteTitle }) {
         >
           <div className="text-sm">
             <Link
-              to="/"
-              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
-            >
-              Home
-            </Link>
-            <Link
               to="/servers"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
@@ -54,6 +48,18 @@ function Header({ siteTitle }) {
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Discord
+            </Link>
+            {/* <Link
+              to="/map"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Map
+            </Link> */}
+            <Link
+              to="/steam"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Steam
             </Link>
             <Link
               to="/shop"

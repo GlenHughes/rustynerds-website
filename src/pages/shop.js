@@ -28,17 +28,12 @@ class ShopPage extends Component {
     }
 
     this.openModal = this.openModal.bind(this)
-    this.afterOpenModal = this.afterOpenModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
   }
 
   openModal () {
     console.log("open clicked")
     this.setState({modalIsOpen: true})
-  }
-
-  afterOpenModal () {
-    // do stuff after modal is opened
   }
 
   closeModal () {
@@ -70,14 +65,13 @@ class ShopPage extends Component {
                 <h2 className="font-serif text-2xl">Which server are you playing on?</h2>
                 <p>Please choose the server's store that you are playing on by clicking one of the buttons below. The upgrade will be automatically applied to your account within 1 miunute!</p>
                 <p className="mt-5 text-center">
-                  <a className="btn hover:bg-blue-700" href="https://app.gpay.io/store/rustynerds-x2">x2 Server</a>
-                  <a className="btn mx-3 hover:bg-blue-700" href="https://app.gpay.io/store/rustynerds-x5">x5 Server</a>
+                  <a className="btn btn-blue hover:bg-blue-700" href="https://app.gpay.io/store/rustynerds-x2" target="_blank">x2 Server</a>
+                  <a className="btn btn-blue mx-3 hover:bg-blue-700" href="https://app.gpay.io/store/rustynerds-x5" target="_blank">x5 Server</a>
                 </p>
               </div>
             </ReactModal>
             <Tabs
               defaultTab="vip-black"
-              onChange={(tabId) => { console.log(tabId) }}
             >
               <TabList>
                 <Tab tabFor="vip-black" className="bg-black text-yellow-500 text-black inline-block border-l border-t border-r rounded-t p-1 px-2 sm:py-2 sm:px-4 sm:font-bold">[VIP-BLACK]</Tab>
