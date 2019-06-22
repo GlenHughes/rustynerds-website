@@ -47,7 +47,7 @@ class ShopPage extends Component {
           title="Purchase VIP Upgrades and or RP"
           keywords={[`rustynerds`, `bugsy1440p`, `rust`, `gaming`, `shop`, `vip`, `vip-black`, `vip-plus`]}
         />
-        <div className="justify-between max-w-6xl mx-auto p-4 sm:py-12">
+        <div className="justify-between max-w-6xl mx-auto mt-3 sm:mt-10 px-4 py-8 md:p-8 sm:py-0">
           <div className="w-full text-center px-3">
             <h1 className="text-3xl font-serif">Looking for VIP upgrades and or RP?</h1>
             <p className="mt-3">You can purchase <span className="text-yellow-500 font-bold">VIP</span> or <span className="font-bold">RP</span> directly through our online web store. The whole system is completely automated and uses your Steam ID to link purchases directly to your user account on our servers.</p>

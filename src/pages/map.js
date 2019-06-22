@@ -11,7 +11,7 @@ function MapPage () {
         title="RustIO Live Maps"
         keywords={[`rustynerds`, `bugsy1440p`, `rust`, `gaming`, `map`, `live`, `RustIO`]}
       />
-      <div className="max-w-6xl mx-auto md:flex">
+      <div className="max-w-6xl mx-auto md:flex px-4 py-8 md:p-8 sm:py-0">
         <div className="w-full p-5 text-center">
           <h1 className="font-serif text-2xl">RustIO Live Maps</h1>
           <p className="font-serif mb-2">

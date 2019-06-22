@@ -1,30 +1,20 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
-import "../../node_modules/react-image-gallery/styles/css/image-gallery.css"
+import Slider from "react-slick";
+
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Image from "../components/image"
 
 function IndexPage () {
-  const images = [
-    {
-      original: <Image filename="01.png" />,
-      thumbnail: <Image filename="01.png" />,
-    },
-    {
-      original: <Image filename="03.png" />,
-      thumbnail: <Image filename="03.png" />,
-    },
-    {
-      original: <Image filename="04.png" />,
-      thumbnail: <Image filename="04.png" />,
-    },
-    {
-      original: <Image filename="05.png" />,
-      thumbnail: <Image filename="05.png" />,
-    },
-  ]
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <Layout>
       <SEO
@@ -32,7 +22,23 @@ function IndexPage () {
         keywords={[`rustynerds`, `bugsy1440p`, `rust`, `gaming`]}
       />
       <div className="text-center">
-        <ImageGallery items={images} />
+        <Slider {...settings}>
+          <div>
+            <Image filename="01.png" />
+          </div>
+          <div>
+            <Image filename="02.png" />
+          </div>
+          <div>
+            <Image filename="03.png" />
+          </div>
+          <div>
+            <Image filename="04.png" />
+          </div>
+          <div>
+            <Image filename="05.png" />
+          </div>
+        </Slider>
       </div>
     </Layout>
   );

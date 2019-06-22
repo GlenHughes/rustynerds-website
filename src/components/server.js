@@ -7,7 +7,7 @@ function Server ({ server }) {
   const serverPlugins = getPlugins(plugins)
   // console.log(name, ip, port, plugins)
   return (
-    <div className="rounded overflow-hidden shadow-lg m-auto mt-3 px-2">
+    <div className="rounded overflow-hidden shadow-lg m-auto mt-3 px-4 py-8 md:p-8 sm:py-0">
       <Image className="w-full" filename={banner} alt={name} />
       <div className="p-2">
         <div className="flex flex-wrap">

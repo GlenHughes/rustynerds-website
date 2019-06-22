@@ -11,7 +11,7 @@ function DiscordPage() {
         title="Discord"
         keywords={[`rustynerds`, `bugsy1440p`, `rust`, `gaming`, `Discord`]}
       />
-      <div className="max-w-6xl mx-auto md:flex">
+      <div className="max-w-6xl mx-auto md:flex px-4 py-8 md:p-8 sm:py-0">
         <div className="w-full md:w-1/2 p-5">
           <h1 className="font-serif text-2xl">RustyNerds' Discord Server</h1>
           <p className="font-serif mb-2">

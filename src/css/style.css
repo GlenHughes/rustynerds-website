@@ -71,6 +71,9 @@
  * @import "utilities/skew-transforms";
  */
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
  .logo {
    position: absolute;
    max-width: 150px;
