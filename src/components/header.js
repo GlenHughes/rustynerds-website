@@ -67,12 +67,6 @@ function Header({ siteTitle }) {
             >
               Shop
             </Link>
-            <Link
-              to="/sarah"
-              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
-            >
-              Sarah
-            </Link>
           </div>
         </div>
       </div>
