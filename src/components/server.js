@@ -16,7 +16,7 @@ function Server ({ server }) {
             <span className="rounded bg-green-500 p-1 text-xs text-white font-bold leading-tight ml-2 float-right">20/100</span>
           </div>
           <div className="w-full sm:w-1/2 lg:w-full">
-            <a href={`steam://connect/${ip}:${port}`} className="font-bold">{ip}:{port}</a> <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-1 rounded">Connect</button>
+            <a href={`steam://connect/${ip}:${port}`} className="font-bold">{ip}:{port}</a> <a href={`steam://connect/${ip}:${port}`} className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 py-1 rounded">Connect</a>
           </div>
         </div>
       </div>
