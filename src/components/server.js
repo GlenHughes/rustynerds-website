@@ -26,7 +26,6 @@ function Server ({ server }) {
       </div>
       <div className="w-1/4">
         <div className="p-2">
-          <h2 className="font-bold text-xl">Battle Metrics</h2>
           <img src={`https://cdn.battlemetrics.com/b/standardVertical/${battleMetrics}.png?foreground=%23000000&linkColor=%23FF0700&lines=%23333333&background=%23EDF1F6&chart=players%3A24H&chartColor=%23FF0700&showPlayers=1&maxPlayersHeight=300`} />
         </div>
       </div>
