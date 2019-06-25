@@ -5,6 +5,7 @@
     "ip": "194.147.122.217",
     "port": "28015",
     "banner": "rusty-nerds-main-x5.png",
+    "battleMetrics": "3356938",
     "plugins": [
       "x5 Multiplier",
       "RustNet",
@@ -32,6 +33,7 @@
     "ip": "194.147.120.77",
     "port": "28015",
     "banner": "rusty-nerds-main-x2.png",
+    "battleMetrics": "3513450",
     "plugins": [
       "x2 Multiplier",
       "RustNet",

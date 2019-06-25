@@ -24,6 +24,7 @@ function ServersPage () {
                 port
                 banner
                 plugins
+                battleMetrics
               }
             }
           }
