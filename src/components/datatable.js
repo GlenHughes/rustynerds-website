@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types";
 import DataTable from "react-data-table-component"
 import axios from "axios"
+import Loading from "./loading";
 
 // @todo - make names clickable profile pages...
 
@@ -20,26 +21,34 @@ class StatsTable extends Component {
         name: "Kills",
         selector: "PVPKills",
         sortable: true,
+        center: true,
       },
       {
         name: "Deaths",
         selector: "Deaths",
         sortable: true,
+        center: true,
       },
       {
         name: "K/D",
         selector: "KDR",
         sortable: true,
+        center: true,
       },
       {
         name: "Longest Kill (m)",
         selector: "PVPDistance",
         sortable: true,
+        center: true,
       },
       {
         name: "Status",
         selector: "Status",
         sortable: true,
+        format: row => {
+          const { Status } = row
+          return <span className={`text-bold text-${Status === "online" ? "green" : "red"}-500`}>{Status}</span>
+        }
       },
     ]
   }
@@ -49,7 +58,7 @@ class StatsTable extends Component {
   }
 
   fetchPlayerStats = server => {
-    console.log(`load stats from server: ${server}`)
+    // console.log(`load stats from server: ${server}`)
     this.setState({ loading: true })
     axios
       .get(`http://localhost:5000/api/stats/${server}`)
@@ -78,6 +87,12 @@ class StatsTable extends Component {
         data={data}
         progressPending={loading}
         pagination={true}
+        progressComponent={<Loading />}
+        progressCentered={true}
+        defaultSortField="Status"
+        defaultSortAsc={false}
+        striped={true}
+        responsive={true}
       />
     )
   }
