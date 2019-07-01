@@ -59,9 +59,10 @@ class StatsTable extends Component {
 
   fetchPlayerStats = server => {
     // console.log(`load stats from server: ${server}`)
+    // dev http://localhost:5000
     this.setState({ loading: true })
     axios
-      .get(`http://localhost:5000/api/stats/${server}`)
+      .get(`https://api.rustynerds.com/api/stats/${server}`)
       .then(response => {
         const { data } = response
         const { results } = data
