@@ -6,6 +6,11 @@ import Loading from "./loading";
 
 // @todo - make names clickable profile pages...
 
+function convertMinutes (num) {
+  const days = Math.floor(num / 1440)
+
+}
+
 class StatsTable extends Component {
   state = {
     loading: false,
@@ -38,6 +43,12 @@ class StatsTable extends Component {
       {
         name: "Longest Kill (m)",
         selector: "PVPDistance",
+        sortable: true,
+        center: true,
+      },
+      {
+        name: "Time (HH:MM:SS)",
+        selector: "TimePlayed",
         sortable: true,
         center: true,
       },
