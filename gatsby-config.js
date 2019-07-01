@@ -42,6 +42,6 @@ module.exports = {
         name: `img`,
         path: `${__dirname}/src/images`
       }
-    }
+    },
   ]
 };

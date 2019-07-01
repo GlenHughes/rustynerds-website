@@ -44,6 +44,12 @@ function Header({ siteTitle }) {
               Servers
             </Link>
             <Link
+              to="/stats"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Stats
+            </Link>
+            <Link
               to="/discord"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
