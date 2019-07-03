@@ -59,7 +59,7 @@ function IndexPage () {
       <div className="max-w-6xl mx-auto mt-0 md:mt-5 justify-between py-0 px-6 md:py-6 md:flex">
         <div className="w-full md:w-1/2 text-center">
           <h2 className="text-4xl font-serif">Claim the Discord Kit</h2>
-          <p>Get access to our daily Discord kit which you can cliam by simply joining our Discord server! This is by far the best way to speak to the staff on our servers and report any issues you maybe having. All important updates are also posted here!</p>
+          <p>Get access to our daily Discord kit which you can claim by simply joining our Discord server! This is by far the best way to speak to the staff on our servers and report any issues you may be having. All important updates are also posted here!</p>
           <Link className="btn btn-blue inline-block mt-5" to="/discord">Join Discord</Link>
         </div>
         <div className="w-full md:w-1/2 text-center pb-5 mt-4 md:mt-0">
