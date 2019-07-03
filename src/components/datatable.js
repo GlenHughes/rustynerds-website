@@ -55,6 +55,7 @@ class StatsTable extends Component {
       {
         name: "Status",
         selector: "Status",
+        right: true,
         sortable: true,
         format: row => {
           const { Status } = row
