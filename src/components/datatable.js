@@ -5,12 +5,6 @@ import axios from "axios"
 import Loading from "./loading";
 
 // @todo - make names clickable profile pages...
-
-function convertMinutes (num) {
-  const days = Math.floor(num / 1440)
-
-}
-
 class StatsTable extends Component {
   state = {
     loading: false,
@@ -21,42 +15,49 @@ class StatsTable extends Component {
         name: "Player",
         selector: "Name",
         sortable: true,
+        wrap: true,
       },
       {
         name: "Kills",
         selector: "PVPKills",
         sortable: true,
         center: true,
+        wrap: true,
       },
       {
         name: "Deaths",
         selector: "Deaths",
         sortable: true,
         center: true,
+        wrap: true,
       },
       {
         name: "K/D",
         selector: "KDR",
         sortable: true,
         center: true,
+        wrap: true,
       },
       {
         name: "Longest Kill (m)",
         selector: "PVPDistance",
         sortable: true,
         center: true,
+        wrap: true,
       },
       {
         name: "Time (HH:MM:SS)",
         selector: "TimePlayed",
         sortable: true,
         center: true,
+        wrap: true,
       },
       {
         name: "Status",
         selector: "Status",
         right: true,
         sortable: true,
+        wrap: true,
         format: row => {
           const { Status } = row
           return <span className={`text-bold text-${Status === "online" ? "green" : "red"}-500`}>{Status}</span>
