@@ -82,11 +82,15 @@ class StatsTable extends Component {
 
   filterPlayerStats = query => {
     console.log(`Filter player stats: ${query}`)
+    const { data } = this.state
     if (!query) {
+      this.setState({
+        filtered: data
+      })
       return
     }
     
-    const { data } = this.state
+    
     const filtered = data.filter(row => {
       return row.UserID.includes(query) || row.Name.toLowerCase().includes(query.toLowerCase())
     })
