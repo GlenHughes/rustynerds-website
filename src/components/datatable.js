@@ -2,12 +2,10 @@ import React, { Component } from "react"
 import PropTypes from "prop-types";
 import DataTable from "react-data-table-component"
 import axios from "axios"
-import moment from "moment"
 
 import Profile from "./profile"
 import Loading from "./loading";
 
-// @todo - make names clickable profile pages...
 class StatsTable extends Component {
   state = {
     loading: false,
