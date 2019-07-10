@@ -67,7 +67,29 @@ class StatsTable extends Component {
   }
 
   componentDidMount () {
-    this.fetchPlayerStats(this.props.server)
+    const { server, query } = this.props
+    this.fetchPlayerStats(server)
+    this.filterPlayerStats(query)
+  }
+
+  componentWillReceiveProps (newProps) {
+    const { query } = newProps
+    this.filterPlayerStats(query)
+  }
+
+  filterPlayerStats = query => {
+    console.log(`Filter player stats: ${query}`)
+    if (!query) {
+      return
+    }
+    
+    const { data } = this.state
+    const filtered = data.filter(row => {
+      return row.UserID.includes(query) || row.Name.toLowerCase().includes(query.toLowerCase())
+    })
+    this.setState({
+      filtered,
+    })
   }
 
   fetchPlayerStats = server => {
@@ -79,10 +101,12 @@ class StatsTable extends Component {
       .then(response => {
         const { data } = response
         const { results } = data
+        const raw = results.slice(0, results.length) // why do we need to do this?
 
         this.setState({
           loading: false,
-          data: results.slice(0, results.length) // why do we need to do this?
+          data: raw, 
+          filtered: raw,
         })
       })
       .catch(error => {
@@ -93,12 +117,13 @@ class StatsTable extends Component {
 
   render () {
     const { title } = this.props
-    const { columns, data, loading } = this.state
+    const { columns, filtered, loading } = this.state
+
     return (
       <DataTable
         title={title}
         columns={columns}
-        data={data}
+        data={filtered}
         progressPending={loading}
         pagination={true}
         progressComponent={<Loading />}
@@ -107,17 +132,19 @@ class StatsTable extends Component {
         defaultSortAsc={false}
         striped={true}
         responsive={true}
-      />
+        />
     )
   }
 }
 
 StatsTable.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  query: PropTypes.string,
 };
 
 StatsTable.defaultProps = {
-  title: ``
+  title: ``,
+  query: ``,
 };
 
 export default StatsTable
